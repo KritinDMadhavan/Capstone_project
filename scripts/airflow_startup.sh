@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Changing permissions for dbt folder..."
-cd ~/streamify/ && sudo chmod -R 777 dbt
+cd ~/Capstone_project/ && sudo chmod -R 777 dbt
 
 echo "Building airflow docker images..."
-cd ~/streamify/airflow
+cd ~/Capstone_project/airflow
 docker-compose build
 
 echo "Running airflow-init..."
